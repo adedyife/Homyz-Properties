@@ -209,6 +209,7 @@ opacity: 0;
 .search-container{
     width: fit-content;
     display: flex;
+    align-items: center;
     flex-direction: row;
     background-color: white;
     padding: 5px 5px;
@@ -290,7 +291,6 @@ color: rgb(52,84,210);
         z-index: 4;   
     }
 
-   
 
     .logocont{
         display: flex;
@@ -474,19 +474,177 @@ color: rgb(52,84,210);
      position: absolute;
      left: 500px;
      padding: 0px 15px;
-     border-radius: 300px 300px 0 0 ;
+     border-radius: 300px 300px 20px 20px ;
      margin-top: 20px;
-     background-color: rgba(69, 68, 68,.2);
+     background-color: rgba(207, 207, 207, 0.1);
      backdrop-filter: blur(5px);
     }
     
     .main-2 img{
       width: 500px;
-      height: 620px;
-      border-radius: 300px 300px 0 0 ;
-     
-    
+      height: 90vh;
+      border-radius: 300px 300px 20px 20px ;
     }
+
+
+    .sponsors{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+       
+        margin-top: 50px;
+    }
+
+    .sponsors img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .choice span{
+    color: orangered;
+    font-size: 26px;
+    }
+    .choice h2{
+        color: rgb(45, 8, 109);
+        font-size: 40px;
+    }
+    .period{
+       
+        color: rgb(223, 90, 24);
+       font-size: 10px;
+        
+    }
+
+
+
+.scroll{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 50px;
+}
+
+.arrow{
+
+display: flex;
+align-items: center;
+justify-content: flex-end;
+gap: 10px;
+}
+
+.arrow button{
+    width:40px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(203, 202, 200, 0.7);
+    transition: all 300ms ease;
+}
+
+.arrow button:hover{
+    background-color: white;
+    box-shadow: 0 0 0 2px rgba(7, 7, 7, 0.5);
+}
+
+.sale{
+    margin: 40px 50px 0 50px;
+
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    background-color: blue;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.sliders{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: rgb(203, 130, 34);
+
+}
+
+
+
+.sale-items{
+    background-color: white;
+    width: 300px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 450px;
+    transition: all 300ms ease;
+}
+
+.sale-items img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.dollar{
+    color: orange;
+}
+
+.sale-items p {
+    font-size: 25px;
+    color: grey;
+}
+
+.sale-items h3{
+color: rgb(45, 8, 109);
+font-size: 22px;
+}
+
+.sale-items span{
+    color: grey;
+}
+
+.sale-items:hover{
+
+    box-shadow: 0 0 20px rgb(162, 168, 170);
+}
+   
+
+   
+
+
+.slider {
+    width: 95%;
+   height: 450px;
+    position: relative;
+    margin: 0 auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  
+  .slider::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider .slide {
+
+    margin: 40px 50px 0 50px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: 0.3s left ease-in-out;
+  }
+  
+  
+  
+  .ctrl {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+
+
+
+
 }
 
 @media(min-width:1250px){
@@ -496,7 +654,7 @@ color: rgb(52,84,210);
         position: absolute;
         left: 550px;
         padding: 0px 15px;
-        border-radius: 300px 300px 0 0 ;
+        border-radius: 300px 300px 20px 20px  ;
         margin-top: 20px;
         background-color: rgba(69, 68, 68,.2);
         backdrop-filter: blur(5px);
@@ -504,11 +662,20 @@ color: rgb(52,84,210);
        
        .main-2 img{
          width: 600px;
-         height: 90vh;
-         border-radius: 300px 300px 0 0 ;
-        
-       
+         height: 600px;
+         border-radius: 300px 300px 20px 20px  ;
        }
+
+
+     
+       .scroll{
+        margin: 0 100px;
+       }
+
+
+       .slider {
+        width: 80%;}
+
 }
 @media(min-width:1380px){
 
@@ -520,12 +687,12 @@ color: rgb(52,84,210);
         padding: 10px 30px;
     }
 
-.main-2{
+    .main-2{
     width: fit-content;
     position: absolute;
     left: 600px;
     padding: 0px 15px;
-    border-radius: 350px 350px 0 0 ;   
+    border-radius: 350px 350px 20px 20px  ;   
     margin-top: 20px;
     background-color: rgba(69, 68, 68,.2);
     backdrop-filter: blur(5px);
@@ -533,8 +700,17 @@ color: rgb(52,84,210);
    
    .main-2 img{
      width: 700px;
-    
      height: 90vh;
-     border-radius: 350px 350px 0 0 ;   
+     border-radius: 350px 350px 20px 20px  ;   
    }
+
+   .scroll{
+    margin: 0 150px;
+   }
+
+
+   .slider {
+    width: 80%;
+}
+
 }
