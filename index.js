@@ -37,7 +37,7 @@ function productScroll() {
 
     let position = 0; //slider postion
 
-      prev.addEventListener("click", function () {
+      prev[i].addEventListener("click", function () {
     //click previos button
     if (position > 0) {
       //avoid slide left beyond the first item
@@ -46,7 +46,7 @@ function productScroll() {
     }
   });
 
-    next.addEventListener("click", function () {
+    next[i].addEventListener("click", function () {
     if (position >= 0 && position < hiddenItems()) {
       //avoid slide right beyond the last item
       position += 1;
