@@ -7,7 +7,7 @@
 
 .top{
     width: 100%;
-    height: 800px;
+    height: 850px;
     background: url(images/abstract-lines-dark-4k-mg-1366x768.jpg);
     background-repeat: none;
     background-size: cover;
@@ -265,15 +265,147 @@ color: rgb(52,84,210);
    margin: 0 auto;
 }
 
+
+
+.main-2{
+    width: fit-content;
+    position: absolute;
+    
+    padding: 0px 15px;
+    border-radius: 300px 300px 20px 20px ;
+    margin-top: 380px;
+   
+    background-color: rgba(207, 207, 207, 0.1);
+    backdrop-filter: blur(5px);
+   }
+
+
 .main-2 img{
   margin: 0 auto;
   margin-top: 30px;
-  width: 350px;
+  width: 300px;
   border-radius: 200px 200px 0 0 ;
-  box-shadow: 0 0 50px rgb(128, 128, 128 );
+  box-shadow: 0 0 50px rgb(128, 128, 128);  
+}
+
+.sponsors{
+    display: none;
+}
+
+
+
+
+.scroll{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 150px 0 0 20px;
+}
+
+
+.choice span{
+    color: orangered;
+    font-size: 22px;
+    }
+    .choice h2{
+        color: rgb(45, 8, 109);
+        font-size: 25px;
+    }
+    .period{
+       
+        color: rgb(223, 90, 24);
+       font-size: 10px;
+        
+    }
+
+.arrow{
+
+display: flex;
+align-items: center;
+justify-content: flex-end;
+gap: 10px;
+}
+
+.arrow button{
+    width:40px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(203, 202, 200, 0.7);
+    transition: all 300ms ease;
+}
+
+.arrow button:hover{
+    background-color: white;
+    box-shadow: 0 0 0 2px rgba(7, 7, 7, 0.5);
+}
+
+
+.slider {
+    width: 95%;
+   height: 450px;
+    position: relative;
+    margin: 0 auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  
+
+
+.sale-items{
+    background-color: white;
+    width: 250px;
+    margin-top: 20px;
+   margin-right: 10px;
+    border-radius: 10px;
+    height: 450px;
+    transition: all 300ms ease;
+}
+
+
+.sale-items img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.dollar{
+    color: orange;
+}
+
+.sale-items p {
+    font-size: 20px;
+    color: grey;
+}
+
+.sale-items h3{
+color: rgb(45, 8, 109);
+font-size: 17px;
+}
+
+.sale-items span{
+    color: grey;
+}
+
+.sale-items:hover{
+
+    box-shadow: 0 0 20px rgb(162, 168, 170);
+}
+   
+
+
+.slider .slide {
 
     
-}
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    transition: 0.3s left ease-in-out;
+  }
+  
+  
+
 
 }
 
@@ -629,6 +761,7 @@ font-size: 22px;
 
     margin: 40px 50px 0 50px;
     display: flex;
+    flex-direction: row;
     position: absolute;
     left: 0;
     transition: 0.3s left ease-in-out;
