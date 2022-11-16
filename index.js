@@ -65,7 +65,7 @@ function productScroll() {
 
 function translateX(position) {
   //translate items
-  slide.style.left = position * -430 + "px";
+  slide.style.left = position * -400 + "px";
 }
 
 function getCount(parent, getChildrensChildren) {
