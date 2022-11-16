@@ -3,7 +3,7 @@
     margin: 0%;
     
 }
-@media(min-width:320px){
+@media(min-width:200px){
 
 .top{
     width: 100%;
@@ -269,11 +269,11 @@ color: rgb(52,84,210);
 
 .main-2{
     width: fit-content;
-    position: absolute;
-    
+    position: static;
+    margin: 0 auto;
     padding: 0px 15px;
     border-radius: 300px 300px 20px 20px ;
-    margin-top: 380px;
+    margin-top: 30px;
    
     background-color: rgba(207, 207, 207, 0.1);
     backdrop-filter: blur(5px);
@@ -283,7 +283,7 @@ color: rgb(52,84,210);
 .main-2 img{
   margin: 0 auto;
   margin-top: 30px;
-  width: 300px;
+  width:  290px;
   border-radius: 200px 200px 0 0 ;
   box-shadow: 0 0 50px rgb(128, 128, 128);  
 }
@@ -309,6 +309,7 @@ color: rgb(52,84,210);
     .choice h2{
         color: rgb(45, 8, 109);
         font-size: 25px;
+        text-transform: capitalize;
     }
     .period{
        
@@ -391,7 +392,9 @@ font-size: 17px;
     box-shadow: 0 0 20px rgb(162, 168, 170);
 }
    
-
+.slider::-webkit-scrollbar {
+    display: none;
+  }
 
 .slider .slide {
 
@@ -404,6 +407,120 @@ font-size: 17px;
     transition: 0.3s left ease-in-out;
   }
   
+
+  
+  .values{
+    width: 100%;
+    display: grid;
+    grid-template-columns:1fr;
+    padding: 10px;
+    margin-top: 0px;
+  }
+
+  .value-1{
+    width: fit-content;
+    
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 1500px 1500px 20px 20px ;
+    background-color: rgba(207, 207, 207, 0.3);
+    backdrop-filter: blur(5px);
+  }
+  
+  .value-1 img{
+    width: 300px;
+    border-radius: 1500px 1500px 20px 20px ;
+  }
+
+
+   
+  #accordion label {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    color: rgb(27, 25, 81);
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color:white;
+  }
+
+ 
+  .value-item{
+    border-radius: 10px;
+  }
+  .value-item:hover{
+    box-shadow: 0 5px 5px rgba(141, 139, 139, .2);
+  }
+
+
+  .value-stat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+  }
+
+  #accordion label i {
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(130, 155, 225,.6);
+    border-radius: 2px;
+    box-shadow: 0 0 0 3px rgba(223, 223, 223, 0.6);
+  }
+
+  #accordion li{
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+
+  #accordion label + input[type= "radio"]{
+    display: none;
+  }
+
+  #accordion .content{
+    padding:5px;
+    font-size: 13px;
+    color: rgb(97, 96, 96);
+    line-height: 26px;
+    max-height: 0px;
+    
+    border-radius: 5px;
+    overflow: hidden;
+    transition: max-height .4s ease;
+  }
+
+  #accordion label + input[type= "radio"]:checked + .content {
+     max-height: 400px;
+  }
+
+
+
+
+  #accordion label .value-stat .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(9, 40, 241);
+    width: 25px;
+    height: 25px;
+    background-color: rgba(130, 155, 225,.6);
+    transform:rotate(0deg);
+ }
+ 
+
+ 
+
+
   
 
 
@@ -638,8 +755,17 @@ font-size: 17px;
     font-size: 26px;
     }
     .choice h2{
-        color: rgb(45, 8, 109);
-        font-size: 40px;
+        color: rgb(31,62,114);
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .choice-val h2{
+        margin-bottom: 15px;
+    }
+
+    .choice p{
+        color: rgb(136,148,167);
     }
     .period{
        
@@ -741,9 +867,6 @@ font-size: 22px;
 }
    
 
-   
-
-
 .slider {
     width: 95%;
    height: 450px;
@@ -773,11 +896,112 @@ font-size: 22px;
     text-align: center;
     margin-top: 5px;
   }
+
+
+  .values{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    margin-top: 50px;
+  }
+
+  .value-1{
+    width: fit-content;
+    
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 200px 200px 20px 20px ;
+    background-color: rgba(207, 207, 207, 0.3);
+    backdrop-filter: blur(5px);
+  }
   
+  .value-1 img{
+    width: 400px;
+    border-radius: 200px 200px 20px 20px ;
+  }
+
+  
+  #accordion label {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: rgb(27, 25, 81);
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color:white;
+  }
+
+ 
+  .value-item{
+    border-radius: 10px;
+  }
+  .value-item:hover{
+    box-shadow: 0 5px 5px rgba(141, 139, 139, .2);
+  }
 
 
+  .value-stat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+  }
+
+  #accordion label i {
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(130, 155, 225,.6);
+    border-radius: 2px;
+    box-shadow: 0 0 0 3px rgba(223, 223, 223, 0.6);
+  }
+
+  #accordion li{
+    list-style: none;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
 
 
+  #accordion label + input[type= "radio"]{
+    display: none;
+  }
+
+  #accordion .content{
+    padding: 0 50px;
+    font-size: 13px;
+    color: rgb(97, 96, 96);
+    line-height: 26px;
+    max-height: 0px;
+    
+    border-radius: 5px;
+    overflow: hidden;
+    transition: max-height .4s ease;
+  }
+
+  #accordion label + input[type= "radio"]:checked + .content {
+     max-height: 400px;
+  }
+
+  #accordion label .value-stat .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(9, 40, 241);
+    width: 25px;
+    height: 25px;
+    background-color: rgba(130, 155, 225,.6);
+    transform:rotate(0deg);
+ }
+ 
 }
 
 @media(min-width:1250px){
@@ -808,6 +1032,22 @@ font-size: 22px;
 
        .slider {
         width: 80%;}
+
+        .value-1{
+            width: fit-content;
+            border-radius: 250px 250px 20px 20px ;
+        }
+
+        .value-1 img{
+            width: 500px;
+            border-radius: 250px 250px 20px 20px ;
+          }
+
+
+          .value-2{
+            padding: 0 20px;
+          }
+        
 
 }
 @media(min-width:1380px){
@@ -845,5 +1085,12 @@ font-size: 22px;
    .slider {
     width: 80%;
 }
+
+.value-2{
+    padding:  40px;
+  }
+
+
+
 
 }
