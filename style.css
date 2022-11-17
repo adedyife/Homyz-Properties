@@ -1001,6 +1001,26 @@ font-size: 22px;
     background-color: rgba(130, 155, 225,.6);
     transform:rotate(0deg);
  }
+
+
+
+
+.contact-options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    gap: 10px;
+
+}
+
+.contact-options div{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(84, 88, 88);
+}
+
+
+
  
 }
 
@@ -1091,6 +1111,8 @@ font-size: 22px;
 .value-2{
     padding:  40px;
   }
+
+
 
 
 }
