@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&family=Caudex&family=Cinzel&family=EB+Garamond&family=Kaushan+Script&family=Nanum+Myeongjo&family=Open+Sans:wght@300&family=Outfit:wght@200&family=Paytone+One&family=Poppins:wght@100;300;700&family=Rajdhani:wght@300&family=Secular+One&family=Space+Grotesk&family=Teko:wght@300&display=swap');
+
 *{
     padding: 0;
     margin: 0%;
     
 }
+html{
+    scroll-behavior: smooth;
+}
 @media(min-width:200px){
+    button{
+        cursor: pointer;
+    }
 
 .top{
     width: 100%;
@@ -311,6 +319,9 @@ color: rgb(52,84,210);
         font-size: 25px;
         text-transform: capitalize;
     }
+    .choice p{
+        color: rgb(136,148,167);
+    }
     .period{
        
         color: rgb(223, 90, 24);
@@ -518,11 +529,235 @@ font-size: 17px;
  }
  
 
+
+ .contact-options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    gap: 10px;
+
+}
+
+.contact-options {
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+.contact-mnu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(251, 250, 253);
+    transition: all 300ms ease;
+}
+.contact-mnu:hover{
+    box-shadow: 0 5px 5px rgba(141, 139, 139, .2);
+}
+
+.contact-mnu button{
+    background-color: rgba(152, 173, 232, 0.6);
+    color: rgb(9, 40, 241);
+    font-weight: 1000px;
+    font-size: 13px;
+    padding: 20px 55px ;
+    border: none;
+    border-radius: 5px;
+    transition: all 300ms ease;
+}
+.contact-mnu button:hover{
+    background-color: rgb(9, 40, 241);
+    color: white;
+}
+
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.contact-info i{
+    color: rgb(9, 40, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(130, 155, 225,.6);
+    border-radius: 2px;
+    box-shadow: 0 0 0 3px rgba(223, 223, 223, 0.6);
+}
+
+.contact-info h4{
+    color: rgb(31,62,114);
+    font-size: 20px;
+}
+
+.contact-info span{
+color: grey;
+font-size: 16px;
+}
+
+#get-started{
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.subscribe{
+background-color:rgb(31,62,114);
+border-radius: 30px;
+width: 100%;
+height: 350px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+text-align: center;
+box-shadow: 0 0 0 15px rgb(31,62,114,.6);
+}
+
+.subscribe h5{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.subscribe span{
+    color: rgba(240, 230, 230, 0.6);
+    
+}
+
+.subscribe button{
+    background-color: rgba(130, 155, 225,.6);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    box-shadow: 0 0 0 3px rgb(255, 255, 255);
+    transition: all 300ms ease ;
+}
+
+.subscribe button:hover{
+    background-color:white; 
+    color: rgb(130, 155, 225);
+    box-shadow: 0 0 0 3px rgb(130, 155, 225);
+}
+
+
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr ;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 0 20px;
+ }
  
+ .footer-1 {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: space-around;
+ padding: 0%;
+ }
 
+.logo-footer{
+    position: relative;
+    margin: 20px 0 30px 0;
+    display: flex;
+}
 
+.logo-footer img{
+    width: 10px;
+    height: 10px;
+    margin: 8px 5px 0 70px;
+    
+}
+.logo-footer p {
+    color: rgb(101, 32, 221);
+   position: absolute;
+    display: inline;
+    left:0;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.footer-1 span{
+    color: gray;
+    justify-self: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-bottom: 17px;
+    text-align: center;
+}
+
+.footer-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-item{
+    width: 100%;
+    
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-item h5{
+    color: rgb(45, 8, 109);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-2 li {
+    list-style: none;
+    font-weight: 100;
+    font-size: 18px;
+    color: grey;  
+}
+.post{
+    display: grid;
+    grid-template-columns: 1fr ;
+    padding: 0 20px;
   
+}
 
+.terms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap:10px
+
+}
+.post span{
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
+}
 
 }
 
@@ -741,7 +976,6 @@ font-size: 17px;
         display: flex;
         align-items: center;
         justify-content: space-around;
-       
         margin-top: 50px;
     }
 
@@ -991,7 +1225,7 @@ font-size: 22px;
      max-height: 400px;
   }
 
-  #accordion label .value-stat .icon{
+ .icon{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1002,26 +1236,111 @@ font-size: 22px;
     transform:rotate(0deg);
  }
 
-
-
-
 .contact-options{
+ grid-template-columns: 1fr 1fr;
+}
+
+
+footer{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    gap: 10px;
-
-}
-
-.contact-options div{
-    width: 100%;
-    height: 200px;
-    background-color: rgb(84, 88, 88);
-}
-
-
-
+    grid-template-columns: 0.6fr 1.2fr ;
+    height:250px ;
+    align-items: flex-start;
+    justify-content: start;
+    padding: 0 50px;
+ }
  
+ .footer-1 {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: space-around;
+ padding: 0%;
+ }
+
+.logo-footer{
+    position: relative;
+    margin: 20px 0 30px 0;
+    display: flex;
+}
+
+.logo-footer img{
+    width: 10px;
+    height: 10px;
+    margin: 8px 5px 0 70px;
+    
+}
+.logo-footer p {
+    color: rgb(101, 32, 221);
+   position: absolute;
+    display: inline;
+    left:0;
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.footer-1 span{
+    color: gray;
+    justify-self: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-bottom: 17px;
+}
+
+.footer-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-item{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.footer-item h5{
+    color: rgb(45, 8, 109);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-2 li {
+    list-style: none;
+    font-weight: 100;
+    font-size: 18px;
+    color: grey;  
+}
+.post{
+    display: grid;
+    grid-template-columns: 0.6fr 1.2fr ;
+    padding: 0 50px;
+    margin-bottom: 20px;
+}
+
+.terms{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap:20px
+
+}
+.post span{
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+
+}
+
+
 }
 
 @media(min-width:1250px){
@@ -1067,7 +1386,18 @@ font-size: 22px;
           .value-2{
             padding: 0 20px;
           }
-        
+
+          #get-started{
+            padding: 100px;
+         }
+
+         .footer-item h5{
+            font-size: 20;
+         }
+
+            .footer-2 li {
+        font-size: 20px;
+            }
 
 }
 @media(min-width:1380px){
@@ -1106,13 +1436,11 @@ font-size: 22px;
     width: 80%;
 }
 
-
-
 .value-2{
     padding:  40px;
   }
-
-
-
-
+  
+  #get-started{
+    padding: 150px;
+ }
 }
