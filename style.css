@@ -2,16 +2,15 @@
 
 *{
     padding: 0;
-    margin: 0%;
-    
+    margin: 0%;    
 }
 html{
     scroll-behavior: smooth;
 }
 @media(min-width:200px){
-    button{
-        cursor: pointer;
-    }
+button{
+    cursor: pointer;
+}
 
 .top{
     width: 100%;
@@ -21,10 +20,7 @@ html{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    
-    gap:60px;
-   
-    
+    gap:60px;    
 }
 
 header{
@@ -60,7 +56,7 @@ header{
 }
 
 .hom{
-    color: white;
+    color: rgb(197, 193, 193);
    position: absolute;
     display: inline;
     right:10px;
@@ -764,7 +760,6 @@ header{
     
 
 .hom {
-    color: white;
     position: absolute;
     display: inline;
     right: 10px;
