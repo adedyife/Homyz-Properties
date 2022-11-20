@@ -89,9 +89,7 @@ header{
     z-index: 2;   
 }
 
-.menucontainer button a:hover{
-color: white;
-}
+
 
 .close-btn{
     align-self: flex-end;
@@ -143,6 +141,10 @@ color: white;
 .contact-btn a{
     color: white;
     text-decoration: none;
+}
+
+.contact-btn a:hover{
+    color: white;
 }
 
 /* ===============Start==================*/
