@@ -699,7 +699,6 @@ footer{
 
 .footer-item{
     width: 100%;
-    
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -713,6 +712,10 @@ footer{
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 20px;
+}
+
+.footer-item ul{
+    padding: 0%;
 }
 
 .footer-2 li  {
@@ -747,7 +750,6 @@ footer{
     font-weight: 300;
     align-self: center;
     margin: 0% auto;
-
 }
 
 }
