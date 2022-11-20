@@ -748,8 +748,12 @@ footer{
     color: grey;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    align-self: center;
-    margin: 0% auto;
+    text-align: center;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
 }
 
 }
