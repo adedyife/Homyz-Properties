@@ -31,8 +31,7 @@ header{
     display: grid;
     position:fixed ;
     grid-template-columns: 1fr;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0,0.3);
     z-index: 2;
     
 }
@@ -60,7 +59,7 @@ header{
 }
 
 .hom{
-    color: rgb(197, 193, 193);
+    color: rgb(250, 247, 247);
    position: absolute;
     display: inline;
     right:10px;
@@ -69,19 +68,18 @@ header{
 }
 
 .hamburger{
-    color: rgb(185, 184, 184);
+    color: rgb(249, 243, 243);
     margin: 20px 10px;
 }
 
 .menucontainer{
     position: absolute;
-    width:100% ;
+    width:100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    flex-direction: column;
-    background:rgba(69, 69, 69.0.9);
-    backdrop-filter: blur(50px);
+    flex-direction: column;   
+    background-color: transparent;
+    backdrop-filter: blur(40px);
     align-items: center;
     gap: 30px;
     transition: all 150ms linear;
@@ -289,41 +287,35 @@ color: rgb(52,84,210);
     display: none;
 }
 
-
-
-
 .scroll{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 150px 0 0 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 150px 0 0 20px;
 }
 
 
 .choice span{
     color: orangered;
     font-size: 22px;
-    }
-    .choice h2{
-        color: rgb(45, 8, 109);
-        font-size: 25px;
-        text-transform: capitalize;
-    }
-    .choice p{
-        color: rgb(136,148,167);
-    }
-    .period{
-       
-        color: rgb(223, 90, 24);
-       font-size: 10px;
-        
-    }
+}
+.choice h2{
+    color: rgb(45, 8, 109);
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.choice p{
+    color: rgb(136,148,167);
+}
+.period{
+    color: rgb(223, 90, 24);
+    font-size: 10px;      
+}
 
 .arrow{
-
-display: flex;
-align-items: center;
-justify-content: flex-end;
-gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .arrow button{
@@ -349,18 +341,15 @@ gap: 10px;
     overflow-y: hidden;
   }
   
-
-
 .sale-items{
     background-color: white;
     width: 250px;
     margin-top: 20px;
-   margin-right: 10px;
+    margin-right: 10px;
     border-radius: 10px;
     height: 450px;
     transition: all 300ms ease;
 }
-
 
 .sale-items img{
     width: 100%;
@@ -393,28 +382,24 @@ font-size: 17px;
    
 .slider::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .slider .slide {
-
-    
     display: flex;
     flex-direction: row;
     align-items: center;
     position: absolute;
     left: 0;
     transition: 0.3s left ease-in-out;
-  }
-  
-
-  
-  .values{
+}
+   
+.values{
     width: 100%;
     display: grid;
     grid-template-columns:1fr;
     padding: 10px;
     margin-top: 0px;
-  }
+}
 
   .value-1{
     width: fit-content;
@@ -429,7 +414,7 @@ font-size: 17px;
   .value-1 img{
     width: 300px;
     border-radius: 1500px 1500px 20px 20px ;
-  }
+ }
  
   #accordion label {
     height: 30px;
@@ -515,8 +500,6 @@ font-size: 17px;
     background-color: rgba(130, 155, 225,.6);
  }
  
-
-
  .contact-options{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -807,7 +790,6 @@ header{
 
 .menucontainer{
     width: 100%;
-    background-color: transparent;
     position: relative;
     height: fit-content;
     display: flex;
