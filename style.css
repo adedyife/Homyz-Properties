@@ -217,7 +217,11 @@ color: rgb(52,84,210);
 }
 
 .search-container input{
-  border: none;
+    border: none;
+}
+
+.search-container input:focus-visible{
+  outline: none;
 }
 
 .submit-btn{
